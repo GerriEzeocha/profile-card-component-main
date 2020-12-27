@@ -1,0 +1,39 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $darkCyan;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @include breakpoint-down(xsmall){
+        width: auto;
+    }
+
+}
+
+
+
+.attribution {
+    color: white;
+    position: absolute;
+    bottom: 0.1875rem;
+    left: 0.625rem;
+    font-size: x-small;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    @include breakpoint-down (xsmall){
+        display: none;
+    }
+}
